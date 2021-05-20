@@ -16,6 +16,10 @@ public class MyMvcConfig implements WebMvcConfigurer {
         registry.addViewController("/").setViewName("index");
     }
 
+    /**
+     * 注册拦截器，拦截直接访问后台的请求。未登录会被跳转到登录页面。
+     * @param registry 注册机
+     */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginHandleInterceptors())

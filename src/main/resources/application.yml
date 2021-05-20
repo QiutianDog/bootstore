@@ -1,8 +1,7 @@
 server:
-  port: 8080
+  port: 80
   servlet:
     context-path: /
-
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -16,7 +15,3 @@ spring:
   thymeleaf:
     suffix: .html
     cache: false
-  mvc:
-    static-path-pattern: /**
-  resources:
-    static-locations: classpath:/resources/
