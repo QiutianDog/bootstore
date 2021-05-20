@@ -15,6 +15,7 @@ spring:
     show-sql: true
   thymeleaf:
     suffix: .html
+    cache: false
   mvc:
     static-path-pattern: /**
   resources:
