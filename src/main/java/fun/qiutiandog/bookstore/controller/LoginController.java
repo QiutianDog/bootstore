@@ -30,7 +30,7 @@ public class LoginController {
         if (!StringUtils.isEmpty(username) && "123".equals(password)){
             // 登录成功
             session.setAttribute("username", username);
-            return "redirect:/main.html";
+            return "redirect:/dashboard";
         } else {
             model.addAttribute("msg", "用户名或密码错误！");
             return "login";

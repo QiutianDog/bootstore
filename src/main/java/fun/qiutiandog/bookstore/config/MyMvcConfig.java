@@ -23,6 +23,6 @@ public class MyMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginHandleInterceptors())
-                .addPathPatterns("/main.html");
+                .addPathPatterns("/dashboard.html");
     }
 }
