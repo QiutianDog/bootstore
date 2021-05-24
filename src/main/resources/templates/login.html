@@ -78,7 +78,7 @@
                     <input type="text" name="captcha" placeholder="请输入验证码" maxlength="4">
                     <img id="refreshCaptcha" class="validateImg"  th:src="@{/images/captcha.jpg}" >
                 </div>
-
+                <div th:text="${msg}" style="text-align: center;color: red"></div>
             </div>
             <div class="tip">
                 <span class="icon-nocheck"></span>
